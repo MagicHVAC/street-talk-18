@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1b1420">
+<title>Уличный язык 18+</title>
+<style>
+/* Тёмная тема с предупреждающим акцентом; одна колонка */
+:root{--bg:#141016;--card:#1f1923;--fg:#f1e9f3;--mut:#a597ab;--line:#3a2f40;--acc:#ff4d6d;--ok:#4caf50;--bad:#ef5350;color-scheme:dark}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:0 16px 40px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;z-index:3}
+header h1{font-size:18px;margin:0;flex:1}header small{color:var(--mut);font-weight:400;font-size:11px;display:block}
+main{max-width:760px;margin:0 auto}
+h2{font-size:20px;margin:12px 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
+.mut{color:var(--mut);font-size:14px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit;cursor:pointer}
+.btn.sm{padding:3px 8px;font-size:13px}
+.primary{display:block;width:100%;margin-top:10px;background:var(--acc);color:#fff;border:0;border-radius:12px;padding:13px;font:600 16px system-ui,sans-serif;cursor:pointer}
+.seg{display:flex;flex-wrap:wrap;gap:4px;background:var(--line);border-radius:12px;padding:3px;margin:10px 0}
+.seg button{flex:1 1 auto;border:0;background:none;color:var(--fg);border-radius:9px;padding:8px 10px;font:14px system-ui,sans-serif;cursor:pointer}
+.seg button.on{background:var(--card);color:var(--acc);font-weight:700}
+.w{font-size:21px}.py{color:var(--mut)}.mean{font-size:17px;margin:6px 0 2px}
+.lv{display:inline-block;color:var(--lc);border:1px solid var(--lc);border-radius:20px;padding:1px 9px;font-size:12px;font-weight:700;margin-top:4px}
+.ex{border-left:3px solid var(--line);padding:4px 10px;margin:8px 0}
+.line{padding:6px 10px;margin:8px 0;background:rgba(255,255,255,.03);border-radius:8px}
+.tip{background:rgba(255,77,109,.1);border-radius:10px;padding:8px 10px;margin-top:8px;font-size:14px}
+.opt{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:12px;padding:12px;font:16px system-ui,sans-serif;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--ok);background:rgba(76,175,80,.18)}.opt.bad{border-color:var(--bad);background:rgba(239,83,80,.18)}
+.center{text-align:center}
+.gate{text-align:center;margin-top:40px}
+button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+</style>
+</head>
+<body>
+<header><h1>Уличный язык 18+<small id="ver"></small></h1></header>
+<main id="app"></main>
+<script src="js/data_en.js?v=1.0.0"></script>
+<script src="js/data_zh.js?v=1.0.0"></script>
+<script src="js/app.js?v=1.0.0"></script>
+</body>
+</html>
